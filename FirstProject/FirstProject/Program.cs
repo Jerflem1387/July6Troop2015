@@ -44,11 +44,11 @@ namespace FirstProject
             //    Console.WriteLine("You did not enter valid number");
             //}
             Console.WriteLine("what is todays date");
-            DateTime now = DateTime.Now;
+            DateTime today = DateTime.Now;
             string result = "";
             result = Console.ReadLine();
-            now = DateTime.Parse(result);
-            Console.Write(now.ToLongDateString());
+            today = DateTime.Parse(result);
+            Console.Write(today.ToLongDateString());
 
 
 
