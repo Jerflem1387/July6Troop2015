@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F21039F5-7F74-47D0-AB6C-8B09C25EC9BA}</ProjectGuid>
+    <ProjectGuid>{8C7D4255-257D-4E9D-AD3A-A87FEA786136}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpDay2Cont</RootNamespace>
-    <AssemblyName>CSharpDay2Cont</AssemblyName>
+    <RootNamespace>ArrayExtensions</RootNamespace>
+    <AssemblyName>ArrayExtensions</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICar.cs" />
+    <Compile Include="ArrayRandom.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

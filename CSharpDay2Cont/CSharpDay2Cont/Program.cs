@@ -28,6 +28,17 @@ namespace CSharpDay2Cont
         }
     }
 
+    class Car : CSharpDay2Cont.ICar
+    {
+        public string VIN { get; set; }
+        public int Miles { get; set; }
+    }
+
+
+
+
+
+
     class Employee
     {
         public string FirstName { get; set; }
