@@ -10,6 +10,8 @@ namespace LookupDictionary
     {
         static void Main(string[] args)
         {
+            ProductCatalog catalog = new ProductCatalog();
+            Products product = catalog.Lookup(02);
 
 
         }

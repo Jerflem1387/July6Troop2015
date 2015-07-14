@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProfanityCleaner
+namespace CSharpDay4Using
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ProfanityCleaner cleaner = new ProfanityCleaner();
-            string cleanedWord = cleaner.Clean("darn")
         }
     }
 }

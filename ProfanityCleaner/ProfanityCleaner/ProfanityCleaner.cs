@@ -16,9 +16,11 @@ namespace ProfanityCleaner
             _profanity.Add("gosh", "g**h");
             _profanity.Add("yuck", "y**k");
         }
-        public string Clean(string value)
+        public string Clean(string word)
         {
-            return _profanity[value];
+            string foundWord;
+            return _profanity.TryGetValue(word.ToLower().Trim(), out foundWord) ? foundWord : word;
+
         }
     }
 }
