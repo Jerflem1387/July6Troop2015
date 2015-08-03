@@ -1,0 +1,1 @@
+﻿insert into languages (Name, [Type]) values ('Ruby', 'Functional')

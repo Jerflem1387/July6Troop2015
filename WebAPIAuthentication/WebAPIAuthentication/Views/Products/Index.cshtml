@@ -1,0 +1,44 @@
+﻿@using WebAPIAuthentication.Models
+@model IEnumerable<Product>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="cart" style="position:fixed; top:30px; right:100px; min-height:200px; min-width:100px; border:1px solid">
+    <h1>Shopping Cart</h1>
+    <p>drop here</p>
+</div>
+
+
+
+<ul class="cart">
+    @foreach (var products in Model)
+    {
+        <li style="cursor: pointer" id="@products.Id" data-name="@products.Name">@products.Name</li>
+    }
+</ul>
+
+@section scripts{
+    <script>
+       
+
+        $('ul').sortable({
+            connectWith: '.cart'
+        }).disableSelection();
+
+        //$( "ul" ).draggable();
+        //$( ".cart" ).droppable({
+        //    activeClass: "active",
+        //    hoverClass:  "hover",
+        //    drop: function( event, ui ) {
+        //        $( this )
+        //       .addClass( "ui-state-highlight" )
+        //       .find( "p" )
+        //       .html( "Dropped!" );
+        //    }
+        //});
+       
+
+    </script>
+}
+

@@ -1,0 +1,11 @@
+﻿@model uint?
+
+@if (Model.HasValue)
+{
+    @Model.Value.ToString("(###)-###-####")
+}
+
+else
+{
+    <text>N/A</text>
+}

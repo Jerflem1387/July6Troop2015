@@ -1,0 +1,37 @@
+﻿@using Calculator.Models
+@model Numbers
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Number1)
+        @Html.TextBoxFor(m => m.Number1)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Number2)
+        @Html.TextBoxFor(m => m.Number2)
+    </div>
+    <div>
+        <input type="submit" value="Click To Add">
+    </div>
+
+}
+
+<div>
+    @if (Model != null)
+    {
+        @:Answer: @Html.DisplayTextFor(m => m.Result)
+    }
+    else
+    {
+        @:
+    }
+
+
+
+</div>

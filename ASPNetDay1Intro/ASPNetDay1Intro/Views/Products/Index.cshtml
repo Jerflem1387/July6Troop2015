@@ -1,0 +1,70 @@
+﻿@using ASPNetDay1Intro.Models
+@using ASPNetDay1Intro.Helpers
+
+@{
+    List<Product> products = new List<Product>{
+        new Product{ Name = "Eggs", Price = 3.22m, OnSalePrice = 2.25m},
+        new Product{ Price = 2.89m, Name = "Milk", OnSalePrice = 1.99m},
+        new Product{ Name = "Cheese", Price = 3.15m, OnSalePrice = 2.45m}
+    };
+}
+
+
+
+<table class="table">
+    <thead>
+        Products On Sale
+    </thead>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>Price</th>
+        <th>On Sale Price</th>
+    </tr>
+    @foreach (Product product in products)
+    {
+        <tr><td>
+    @product.Name<br />
+            @Html.Image("http://piq.codeus.net/static/media/userpics/piq_9319_400x400.png")
+    </td></tr>
+        <tr><td>@MyHelpers.FormatPrice(product.Price)</td></tr>
+        <tr><td>@MyHelpers.FormatPrice(product.OnSalePrice)</td></tr>
+    }
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+    @foreach (Product product in products)
+    {
+        <li>@product.Name</li>
+        <li>@product.Price</li>
+        <li>@product.OnSalePrice</li>
+
+    }
+</ul>
+
+
+
